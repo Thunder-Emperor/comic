@@ -68,12 +68,16 @@ export default function Cart(){
                                 <h1 className="">total price:</h1>
                                 <h1 className="pl-4 lg:pl-16">&#x20B9; {cartTotal}</h1>
                     </div>
-                    <div className="text-center px-16 space-y-4 lg:pl-96 py-10">
-                        <a
-                          className="uppercase block w-60 p-2 font-semibold text-lg mb-10 bg-cyan-500 ring-2 ring-black"
-                        >
-                          Checkout
-                        </a>
+                    <div className="text-center px-16 space-y-4 lg:pl-[550px] py-10">
+                    <div className="group relative inline-block focus:outline-none " >
+                            <span
+                              className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-cyan-500 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+                            ></span>
+                            <button
+                              className="relative inline-block border-2 border-current px-8 py-3 text-lg font-bold tracking-widest text-black group-active:text-opacity-75">
+                              Checkout
+                            </button>
+                        </div>
                       </div>
                 </div>
             </div>

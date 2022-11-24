@@ -5,7 +5,7 @@ export default function navbar(){
     return(
         <>
             
-        <div className='fixed   bg-white w-full'>
+        <div className='fixed   bg-white w-full shadow-md shadow-cyan-500'>
             <div className='flex'>
 
              <img src={logo} alt="logo" className='h-14' />
