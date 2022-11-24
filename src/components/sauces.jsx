@@ -23,7 +23,7 @@ export default function sauces(){
                 className="border-2 border-black object-cover w-5/6  h-80 rounded"
             />
              
-                <h5 className="uppercase font-bold px-px  text-3xl text-black/90 ">
+                <h5 className="uppercase font-bold px-px  text-2xl text-black/90 ">
                     {comic.name}
                 </h5>
                 <div className="px-px flex products-center justify-between  font-bold">
