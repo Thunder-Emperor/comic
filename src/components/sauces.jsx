@@ -20,13 +20,13 @@ export default function sauces(){
                 alt="Trainer Product"
                 
                 src={comic.image}
-                className="border-2 border-black object-cover w-5/6 -mt-3 h-80 rounded"
+                className="border-2 border-black object-cover w-5/6  h-80 rounded"
             />
              
-                <h5 className="uppercase font-bold px-px mt-4 text-3xl text-black/90 hover:fo">
+                <h5 className="uppercase font-bold px-px  text-3xl text-black/90 ">
                     {comic.name}
                 </h5>
-                <div className="px-px flex products-center justify-between mt-4 font-bold">
+                <div className="px-px flex products-center justify-between  font-bold">
                     <p className="text-lg">
                         ₹10.00
                     </p>
