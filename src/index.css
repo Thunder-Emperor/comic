@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Rubik";
+    src: url('../src/font/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "motley";
+    src: url('../src/font/MotleyForcesRegular-w1rZ3.ttf');
+}
+
+@font-face {
+    font-family: "comic";
+    src: url('./font//BADABB__.TTF');
+}
+
+@font-face {
+    font-family: "vtc";
+    src: url('./font/VTC_letterer_pro.ttf');
+}
