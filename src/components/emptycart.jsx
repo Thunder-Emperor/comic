@@ -48,7 +48,7 @@ export default function EmptyCart() {
                       <div className="text-center space-y-4 pt-4">
                         <Link
                           to="/"
-                          className="capitalize block w-full p-4 text-sm font-medium rounded-full bg-cyan-500 ring-2 ring-black"
+                          className="capitalize block w-full p-4 text-sm font-medium  bg-cyan-500 ring-2 ring-black"
                         >
                           go back to shopping
                         </Link>
