@@ -13,7 +13,7 @@ export default function Details(){
            <Navbar/>
             { data.filter( comic => comic.name === comicName).map((comic) =>(
                <div key={comic.id} className=' pt-16 sm:flex '>
-                <div className="flex justify-center h-96   sm:pl-4 sm:pt-6 sm:h-[36rem] sm:w-1/2">
+                <div className="flex justify-center h-96 pt-4  sm:pl-4 sm:pt-6 sm:h-[36rem] sm:w-1/2">
 
                    <img className=" object-cover" src={comic.image}/>
                 </div>
