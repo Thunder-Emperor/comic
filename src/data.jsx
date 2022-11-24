@@ -5,7 +5,7 @@ import laketown from '../src/images/lake-town.jpg'
 import drstone from './images/dr_stone.jpg'
 import granmuerto from './images/loisel.jpg'
 import wolf from './images/wolf.png'
-import across from './images/across-a-field-of-starlight.jpg'
+import injection from './images/injection.jpg'
 
 const data = [
     {   
@@ -59,10 +59,10 @@ const data = [
     },
     {
         id:8,
-        name:'ACROSS A FIELD OF STARLIGHT',
-        image:across,
+        name:'INJECTION',
+        image:injection,
         price:3,
-        description:'An epic sci-fi graphic novel romance between two non-binary characters as they find one another through time, distance, and war. ...'
+        description:'Once upon a time, there were five crazy people, and they poisoned the 21st Century. Now they have to deal with the corrosion to try and save us all from a world becoming too weird to support human life.'
     },
 
 ]
