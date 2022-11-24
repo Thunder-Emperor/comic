@@ -13,7 +13,7 @@ export default function Details(){
            <Navbar/>
             { data.filter( comic => comic.name === comicName).map((comic) =>(
                <div key={comic.id} className='px-8 pt-16 '>
-                <div className="flex justify-center h-5/6">
+                <div className="flex justify-center h-96">
 
                    <img className=" " src={comic.image}/>
                 </div>
