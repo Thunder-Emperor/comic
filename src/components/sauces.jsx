@@ -28,7 +28,7 @@ export default function sauces(){
                 </h5>
                 <div className="px-px flex products-center justify-between  font-bold">
                     <p className="text-lg">
-                        ₹10.00
+                        ₹{comic.price}
                     </p>
                 </div>
         </Link>

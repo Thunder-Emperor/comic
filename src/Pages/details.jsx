@@ -23,7 +23,7 @@ export default function Details(){
                         <p className="space-x-1 leading-4 font-sans text-xs">{comic.description}</p>
                     
                         <div className=" leading-7">
-                            <p className="font-motley text-2xl">Price: {comic.price}</p>                 
+                            <p className="font-motley text-2xl">Price: ₹{comic.price}</p>                 
                             <div
                             className="group relative inline-block focus:outline-none "
                         >
