@@ -13,7 +13,7 @@ const data = [
         name:"BEFORE THE DAWN",
         image:btd,
         price:10,
-        description:'Nika Chaikina used to be the best in her field: an elusive thief and a secret service agent with many successful missions on'
+        description:'Nika Chaikina used to be the best in her field: an elusive thief and a secret service agent with many successful missions on ...'
     },
     {
         id:2,
