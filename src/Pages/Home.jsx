@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar'
-import Background from '../images/erik-mclean-8SeJUmfahu0-unsplash (1).jpg'
+import Background from '../images/back.jpg'
 import Sauces from '../components/sauces'
 import Slide from '../components/slide'
 

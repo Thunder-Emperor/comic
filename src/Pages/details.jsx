@@ -12,21 +12,19 @@ export default function Details(){
            
            <Navbar/>
             { data.filter( comic => comic.name === comicName).map((comic) =>(
-               <div key={comic.id} className='px-8 pt-16 '>
-                <div className="flex justify-center h-96">
+               <div key={comic.id} className=' pt-16 sm:flex '>
+                <div className="flex justify-center h-96   sm:pl-4 sm:pt-6 sm:h-[36rem] sm:w-1/2">
 
-                   <img className=" " src={comic.image}/>
+                   <img className=" object-cover" src={comic.image}/>
                 </div>
-                   <div className="space-y-0.5">
+                   <div className="space-y-0.5 sm:pl-2 px-8 sm:px-2  sm:pt-24 ">
                       
                         <h1 className="font-motley text-3xl">{comic.name}</h1>
-                        <p className="space-x-1 leading-4 font-sans text-xs">{comic.description}</p>
+                        <p className="space-x-1 leading-4 font-sans text-xs sm:w-96">{comic.description}</p>
                     
-                        <div className=" leading-7">
+                        <div className=" leading-7 ">
                             <p className="font-motley text-2xl">Price: ₹{comic.price}</p>                 
-                            <div
-                            className="group relative inline-block focus:outline-none "
-                        >
+                            <div className="group relative inline-block focus:outline-none " >
                             <span
                               className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-cyan-500 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
                             ></span>
