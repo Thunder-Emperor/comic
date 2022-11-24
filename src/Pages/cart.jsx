@@ -1,5 +1,8 @@
 import { useCart } from "react-use-cart";
-import Navbar from '../components/navbar'
+import logo from '../images/comic-logo.png';
+import { Link } from "react-router-dom";
+import Navbar from '../components/navbar';
+
 export default function Cart(){
 
     const {
@@ -8,47 +11,72 @@ export default function Cart(){
         items,
         updateItemQuantity,
         removeItem,
+        cartTotal
     } = useCart();
 
-    if (isEmpty) return(<p>Your cart is empty</p>)
+    if (isEmpty) return( <div className='fixed   bg-white w-full'>
+    <div className='flex'>
+
+      <img src={logo} alt="logo" className='h-14' />
+      <nav className=' font-vtc  text-4xl pt-1'>
+        <div className='flex items-center font-comic pl-4 pt-2  '>
+            <Link to={`/`} className=''>Home</Link> 
+            <Link to={`/cart`} className="pl-4">Cart</Link>
+        </div>
+      </nav>
+    </div>
+  </div>)
     
     return(
         <> 
-            <Navbar />
-            <div className="font-cartoon text-5xl pt-20 px-6">
-              <p>Shoping Cart</p>
-
-              {items.map((item) => (
-                <div className="relative  h-48 w-32 p-4 pl-2 " key={item.id}>
-                    <div className="absolute insert-y-0 left-0 ">
-                      <img src={item.image}/>
+            <Navbar/>
+            <div>
+            <div className="pt-20">
+                    <div className="font-motley text-4xl pl-4 border-b-2">
+                       Shopping cart
                     </div>
+                    
+
+                    {items.map((item)=> (
+                        <div key={item.id}>
+                            <div className="flex sm:grid  pt-4 pl-4  border-b-2 ">
+                              <div className="grid grid-cols-3 gap-8">  
+                                  <div className="">
+                                    <div className="">
+                                        <img className="object-cover w-28 border-2 h-32 border-black" src={item.image} />
+                                    </div>
+                                    <div>
+                                      <h1 className=" text-md font-motley">{item.name}</h1>
+                                    </div>
+                                </div>
+                                <div className="">
+                                  <div className='w-28 pt-10 space-x-1'>
+                                      <button className='hover:bg-cyan-500 p-2 border-2 border-black' onClick={() => updateItemQuantity(item.id, item.quantity - 1)}>-</button>
+                                      <button className='bg-cyan-500 p-2 border-2 border-black'>{item.quantity}</button>
+                                      <button className='p-2 hover:bg-cyan-500 border-2 border-black' onClick={() => updateItemQuantity(item.id, item.quantity + 1)}>+</button>
+                                  </div>
+                                </div>
+                                <div className=" text-lg font-motley pt-10 ">
+                                        &#x20B9;
+                                    <label className="inline-block p-2 static font-semibold">{item.quantity * item.price}</label>
+                                </div>
+                              </div>
+                            </div>
+                        </div>  
+                    ))}
+                    <div className="flex pl-36 lg:pl-[872px] capitalize text-lg font-motley pt-2 grid-cols-2">
+                                <h1 className="">total price:</h1>
+                                <h1 className="pl-4 lg:pl-16">&#x20B9; {cartTotal}</h1>
+                    </div>
+                    <div className="text-center px-16 space-y-4 lg:pl-96 py-10">
+                        <a
+                          className="uppercase block w-60 p-2 font-semibold text-lg mb-10 bg-cyan-500 ring-2 ring-black"
+                        >
+                          Checkout
+                        </a>
+                      </div>
                 </div>
-              ))}
             </div>
-              
-            <h1>Cart ({totalUniqueItems})</h1>
-            {console.log(items)}
-            <ul>
-                {items.map((item) =>(
-                 
-                    <div key={item.name}>
-                      
-                    <p>{item.name}{item.quantity}</p>
-                    <button
-                      onClick={() => updateItemQuantity(item.id, item.quantity - 1)}
-                    >
-                      -
-                    </button>
-                    <button
-                      onClick={() => updateItemQuantity(item.id, item.quantity + 1)}
-                    >
-                      +
-                    </button>
-                    <button onClick={() => removeItem(item.id)}>&times;</button>
-                  </div>
-                ))}
-            </ul>
         </>
     )
 }
