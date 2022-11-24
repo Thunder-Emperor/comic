@@ -10,11 +10,11 @@ export default function Details(){
     return(
         <>
            
-            <Navbar/>
+            
             { data.filter( comic => comic.name === comicName).map((comic) =>(
                <div key={comic.id}>
                 <div >
-                    <div className="px-16 pt-16">
+                    <div className="mx-20 pt-16">
                         <img src={comic.image} alt="" className="w-44 " />
                     </div>
                     
