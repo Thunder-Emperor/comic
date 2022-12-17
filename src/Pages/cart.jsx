@@ -62,7 +62,7 @@ export default function Cart(){
                                 <h1 className="pl-4 lg:pl-16">&#x20B9; {cartTotal}</h1>
                     </div>
                     <div className="text-center px-16 space-y-4 lg:pl-[550px] py-10">
-                    <a href="https://buy.stripe.com/test_8wMg2naVObucaJieUU" className="group relative inline-block focus:outline-none " >
+                    <a href="https://buy.stripe.com/fZefZzcQncJTfiEbIL" className="group relative inline-block focus:outline-none " >
                             <span
                               className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-cyan-500 transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
                             ></span>
