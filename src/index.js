@@ -10,6 +10,7 @@ import Home from './Pages/Home'
 import Cart from './Pages/cart'
 import { CartProvider } from 'react-use-cart'
 
+
 const router = createBrowserRouter(
   [
     {
