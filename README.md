@@ -7,9 +7,9 @@
 <img src='./README IMAGE/cart page.png' width='500'>
 
 ## How to Run Project
-
-<li> download npm package using " npm install "
-<li> run "npm start " in cmd
+<li> Clone the Project using "git clone"
+<li> download npm modules - write " npm install " in terminal
+<li> run project using terminal - "npm start"
 
 ## Technologies
 
